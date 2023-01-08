@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently --kill-others \"next dev\" \"./pocketbase serve\"",
-    "build": "next build",
+    "build": "concurrently --kill-others \"next build\" \"./pocketbase serve\"",
     "start": "next start",
     "lint": "next lint"
   },
